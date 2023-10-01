@@ -1,0 +1,50 @@
+name: uygulama1
+description: A new Flutter project.
+
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  min_id: ^1.1.0
+  get: ^4.1.4
+  dots_indicator: ^2.1.0
+  shared_preferences: ^2.1.1
+  intl: ^0.17.0
+
+dev_dependencies:
+  flutter_native_splash: ^2.0.5
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+
+
+
+  fonts:
+     - family: Roboto
+       fonts:
+         - asset: fonts/Roboto-Regular.ttf
+         #- asset: fonts/Schyler-Italic.ttf
+           #style: italic
+           weight: 400
+     - family: PT Serif
+       fonts:
+         - asset: fonts/PTSerif-Regular.ttf
+         #- asset: fonts/TrajonPro_Bold.ttf
+           weight: 700
+

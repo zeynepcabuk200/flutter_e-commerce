@@ -1,0 +1,36 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:uygulama1/widgets/big_text.dart';
+import 'package:uygulama1/widgets/icon_and_text_widget.dart';
+import 'package:uygulama1/widgets/small_text.dart';
+import 'package:uygulama1/utils/dimansions.dart';
+
+class IconAndTextWidget extends StatelessWidget { //statefull arasındaki fark ne? hata aldım
+  final IconData icon;
+  final String text;
+  final Color iconColor;
+
+  const IconAndTextWidget({Key? key,
+    required this.icon,
+    required this.text,
+    required this.iconColor}) : super(key: key);
+
+  //@override
+  // State<IconAndTextWidget> createState() => _IconAndTextWidgetState();
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Icon(icon, color: iconColor,size: Dimensions.iconSize24),
+        SizedBox(width: 5,),
+        SmallText(text:text),
+
+
+      ],
+    );
+  }
+}
+
+
